@@ -85,3 +85,72 @@
 	font-size: 15px;
 	padding-left: 20px;
 }
+
+.subscribe {
+	width: 100%;
+	border-top: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed #E5E5E5;
+	height: 50px;
+	margin: 30px 0;
+
+	.table_icon{
+		display: inline-block;
+	}
+	.newsletter {
+		width: 45%;
+		display: inline-block;
+		font-size: 12px;
+		padding: 5px 15px;
+	}
+
+	.email_box {
+		width: 30%;
+		display: inline-block;
+	}
+
+	.subscribe_button {
+		width: 10%;
+		display: inline-block;
+	}
+}
+
+
+
+.articles {
+	width: 100%;
+	margin: 0 -6px;
+}
+.article {
+	width: 23%;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 0 6px 25px 6px;
+}
+
+.article_image {
+	width: 100%;
+	padding: 9px;
+	background: #FFF;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+}
+
+.article_title {
+	color: #00A48E;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.read_more {
+	color: #00A48E;
+	font-size: 14px;
+	font-weight: 200;
+	text-decoration:none;
+}
+
+.publish_date {
+	color: #AAA;
+	font-size: 14px;
+	font-weight: 200;
+}
