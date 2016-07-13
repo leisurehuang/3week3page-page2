@@ -24,7 +24,7 @@ gulp.task('serve', function() {
       server: "./"
   });
   //use gulp.watch to trigger server actions(notify, start or stop)
-  gulp.watch(['./src/*.scss', './index.html',], ['sass']);
+  gulp.watch(['./src/*.scss',], ['sass']).on('change', browserSync.reload);
   gulp.watch(['./*.html', './src/images/***']).on('change', browserSync.reload);
 });
 
