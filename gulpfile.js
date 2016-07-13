@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var gls = require('gulp-live-server');
+var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
   return gulp.src('./src/main.scss')
@@ -16,15 +17,18 @@ gulp.task('images', function () {
 
 gulp.task('serve', function() {
   //2. serve at custom port
-  var server = gls.static('./', 3030);
-  // var server = gls('./', true, 3030);
-  server.start();
+  //var server = gls.static('./', 3030);
+  //server.start();
 
-  //use gulp.watch to trigger server actions(notify, start or stop)
-  gulp.watch(['./src/*.scss', './index.html', './src/images/***'], ['sass'], function (file) {
-    server.notify.apply(server, [file]);
+  browserSync.init({
+      server: "./"
   });
+  //use gulp.watch to trigger server actions(notify, start or stop)
+  gulp.watch(['./src/*.scss', './index.html',], ['sass']);
+  gulp.watch(['./*.html', './src/images/***']).on('change', browserSync.reload);
 });
+
+
 
 gulp.task('default',['images','sass','serve'],function(){
 
