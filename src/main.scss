@@ -38,6 +38,30 @@
 	color: #00A48E;
 	font-size: 20px;
 }
+
+.join_tweet{
+	margin-top: 40px;
+	margin-left: 10px;
+	margin-right: 100px;
+}
+.share_underline {
+	border:1px dashed #E5E5E5;
+	display: block;
+}
+
+.share_title {
+	margin: 0 auto;
+}
+.share_subtitle {
+
+}
+.share_button {
+	height: 30px;
+	border-radius: 3px;
+	background-color: white;
+	border-color: #E5E5E5;
+}
+
 .hero_image {
 	margin: auto;
 	width: 100%;
@@ -92,7 +116,7 @@
 	border-right: 1px solid #CFEBE7;
 }
 
-ul li:hover{
+.nav_tabs li:hover{
  background-color: #DAEFEC;
 }
 
