@@ -1,46 +1,40 @@
 body {
 	margin: 0 auto;
 	min-width: 1400px;
+	max-width: 1800px;
 }
-
-// font icon
-
 @font-face {
-    font-family: 'IcoMoon-Free';
-    src: url('images/IcoMoon-Free.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'IcoMoon-Free';
+	src: url('images/IcoMoon-Free.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-
 .icon {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'IcoMoon-Free' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Enable Ligatures ================ */
-    letter-spacing: 0;
-    -webkit-font-feature-settings: "liga";
-    -moz-font-feature-settings: "liga=1";
-    -moz-font-feature-settings: "liga";
-    -ms-font-feature-settings: "liga" 1;
-    -o-font-feature-settings: "liga";
-    font-feature-settings: "liga";
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'IcoMoon-Free' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Enable Ligatures ================ */
+	letter-spacing: 0;
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
 .icon_facebook::before {
-    content: "\ea90";
+	content: "\ea90";
 }
 .icon_twitter::before {
-    content: "\ea96";
+	content: "\ea96";
 }
 .icon_rss::before {
 	content: "\ea9b";
@@ -48,7 +42,7 @@ body {
 .icon_mail::before {
 	content: "\e945";
 }
-.icon_clock::before{
+.icon_clock::before {
 	content: "\e94e";
 }
 .icon_book::before {
@@ -66,18 +60,15 @@ body {
 .icon_size {
 	font-size: 35px;
 }
-
-
-
 .green_color {
 	color: #00A48E;
 }
-
 .container {}
 .left_content {
-	width: 20%;
+	box-sizing: border-box;
+	width: 18%;
 	display: inline-block;
-	margin-left: 40px;
+	padding-left: 40px;
 	.site_logo {
 		margin: 0 auto;
 		width: 50%;
@@ -89,7 +80,6 @@ body {
 			list-style-type: none;
 			.table_icon {
 				margin: 10px;
-				display: inline-block;
 				vertical-align: middle;
 			}
 			.table_item_name {
@@ -103,7 +93,7 @@ body {
 	.join_tweet {
 		margin-top: 40px;
 		margin-left: 10px;
-		margin-right: 100px;
+		margin-right: 40px;
 	}
 	.share_underline {
 		border: 1px dashed #E5E5E5;
@@ -112,9 +102,7 @@ body {
 	.share_title {
 		margin: 0 auto;
 	}
-	.share_subtitle {
-
-	}
+	.share_subtitle {}
 	.share_button {
 		height: 30px;
 		border-radius: 3px;
@@ -125,7 +113,7 @@ body {
 }
 .right_content {
 	margin: 0 auto;
-	width: 60%;
+	width: 80%;
 	display: inline-block;
 	vertical-align: top;
 	.hero_image {
@@ -192,7 +180,6 @@ body {
 			padding-left: 20px;
 		}
 	}
-
 	.subscribe {
 		width: 100%;
 		border-top: 1px dashed #E5E5E5;
@@ -255,7 +242,6 @@ body {
 	padding: 0;
 	border-top: 1px solid #333;
 	overflow: auto;
-	width: 80%;
 	.site_links {
 		display: inline-block;
 	}
