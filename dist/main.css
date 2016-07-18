@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
-  min-width: 1400px; }
+  min-width: 1400px;
+  max-width: 1800px; }
 
 @font-face {
   font-family: 'IcoMoon-Free';
@@ -63,9 +64,10 @@ body {
   color: #00A48E; }
 
 .left_content {
-  width: 20%;
+  box-sizing: border-box;
+  width: 18%;
   display: inline-block;
-  margin-left: 40px; }
+  padding-left: 40px; }
   .left_content .site_logo {
     margin: 0 auto;
     width: 50%; }
@@ -73,10 +75,10 @@ body {
     margin: 0;
     padding: 0; }
     .left_content .nav_table .nav_table_item {
-      list-style-type: none; }
+      list-style-type: none;
+      margin-top: 20px; }
       .left_content .nav_table .nav_table_item .table_icon {
         margin: 10px;
-        display: inline-block;
         vertical-align: middle; }
       .left_content .nav_table .nav_table_item .table_item_name {
         display: inline-block;
@@ -86,7 +88,7 @@ body {
   .left_content .join_tweet {
     margin-top: 40px;
     margin-left: 10px;
-    margin-right: 100px; }
+    margin-right: 40px; }
   .left_content .share_underline {
     border: 1px dashed #E5E5E5;
     display: block; }
@@ -100,7 +102,7 @@ body {
 
 .right_content {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   display: inline-block;
   vertical-align: top; }
   .right_content .hero_image {
@@ -206,10 +208,10 @@ body {
 .site_footer {
   margin-top: 40px;
   margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
   border-top: 1px solid #333;
-  overflow: auto;
-  width: 80%; }
+  overflow: auto; }
   .site_footer .site_links {
     display: inline-block; }
   .site_footer .webpages {
