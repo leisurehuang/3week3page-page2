@@ -12,7 +12,8 @@ body {
 .htitle {
   text-indent: -999em;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  font-size: 5px; }
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
